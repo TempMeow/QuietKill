@@ -40,7 +40,7 @@ QuietKill is a powerful KernelSU/Magisk module that force-kills all non-essentia
 #### 🔊 Method 2: Use Volume-Up Trigger
 - Triple-press the **Volume Up** button (from anywhere)
 - The script runs silently in the background
-- Toggle listener on/off using the `/sdcard/QuietKill` file
+- Toggle listener on/off using the `/sdcard/stopQuietKill` file
 
 
 
@@ -48,7 +48,7 @@ QuietKill is a powerful KernelSU/Magisk module that force-kills all non-essentia
 
 File location:
 ```
-/$MODDIR/ignore.txt
+$MODDIR/ignore.txt
 ```
 
 Example contents:
@@ -66,10 +66,10 @@ Each line = one app package to **ignore from being killed**.
 ✅ Use the action button in your root manager
 
 # 🔕 Disable the volume trigger
-touch /sdcard/QuietKill
+touch /sdcard/stopQuietKill
 
 # 🔔 Re-enable the volume trigger
-rm /sdcard/QuietKill
+rm /sdcard/stopQuietKill
 ```
 
 ## ⚠️ Disclaimer
