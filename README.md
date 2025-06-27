@@ -78,4 +78,11 @@ Force-killing apps may break notifications or background services.
 Always use the **ignore list** to exclude apps you rely on (like messaging or banking).
 
 
-Made with love by [Mona](https://t.me/MeowDump)
+## 📦 Download Popup Toast generator   `(optional)`
+<p align="center">
+  <a href="https://github.com/TempMeow/QuietKill/releases/download/v1/Toaster.apk">
+    <img src="https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android" alt="Download APK"/>
+  </a>
+</p>
+
+Made with love by [Mona](https://t.me/TempMeow)
