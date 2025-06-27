@@ -1,4 +1,4 @@
-# 💣 QuietKill Android Root Module
+# 💣 QuietKill Module
 
 QuietKill is a powerful KernelSU/Magisk module that force-kills all non-essential background apps in one tap or with a volume button trigger to help you **save battery**, **free RAM**, and keep your phone smooth.
 
@@ -14,7 +14,11 @@ QuietKill is a powerful KernelSU/Magisk module that force-kills all non-essentia
 - ✅ **WebUI** to control everything (force-stop, view logs, add/remove ignore apps)
 - ✅ **Volume Key Trigger**: triple-press volume up to kill apps from anywhere
 
-
+<div align="center">
+  <a href="https://github.com/TempMeow/QuietKill/releases" target="_blank">
+    <img src="media/download.png" alt="Download Button" width="600" />
+  </a>
+</div>
 
 ## 📸 Screenshots
 
