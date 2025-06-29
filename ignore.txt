@@ -14,4 +14,3 @@ io.github.a13e300.ksuwebui
 io.github.vvb2060.magisk
 com.topjohnwu.magisk
 wcfjii.iemxom.hejdpo
-bin.mt.plus
