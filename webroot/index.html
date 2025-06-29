@@ -284,7 +284,7 @@
     };
 
     function runScript() {
-      toast("Executing force-stop script...");
+      toast(" Hey dude, listen, This action will force-stop all installed apps, as well as any system apps you've added to the force kill list. Only the apps you've added to the ignore list will remain unaffected.");
       clearOutput();
       appendOutput("⏳ Executing force-stop script...");
       runShell("sh /data/adb/modules/QuiteKill/QuiteKill.sh", () => {
