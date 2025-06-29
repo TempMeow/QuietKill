@@ -1,18 +1,17 @@
-# 💣 QuietKill Module
+# 🤫🔪 QuietKill Module
 
-QuietKill is a powerful KernelSU/Magisk module that force-kills all non-essential background apps in one tap or with a volume button trigger to help you **save battery**, **free RAM**, and keep your phone smooth.
+QuietKill is a powerful KernelSU/Magisk module that force-kills all non-essential background apps when you lock your phone helping you **save battery**, **free RAM**, and keep your phone smooth.
 
-> 💡 You can [whitelist](https://github.com/TempMeow/QuietKill/blob/main/README.md#-ignore-list-format) apps you don't want to kill (like WhatsApp or Telegram) by adding them to an ignore list.
-
-
+> 💡 You can [whitelist](#-ignore-list-format) apps you don't want to kill (like WhatsApp or Telegram) by adding them to an ignore list.
 
 ## 🧠 What It Does
 
 - ✅ Force-stops all **user apps**
-- ✅ Includes default system apps like **Play Store & Play Services**
-- ✅ **Ignore list** to exclude important apps
-- ✅ **WebUI** to control everything (force-stop, view logs, add/remove ignore apps)
-- ✅ **Volume Key Trigger**: triple-press volume up to kill apps from anywhere
+- ✅ Supports force-killing **specific system apps**
+- ✅ **Ignore list (whitelist mode)** to protect key apps
+- ✅ **Force Kill List** for system apps to always kill on lock
+- ✅ **WebUI** to control force-stops, manage lists, and view logs
+- ✅ **Power Key = Kill**: Automatically triggers on screen lock
 
 <div align="center">
   <a href="https://github.com/TempMeow/QuietKill/releases" target="_blank">
@@ -20,38 +19,34 @@ QuietKill is a powerful KernelSU/Magisk module that force-kills all non-essentia
   </a>
 </div>
 
+
 ## Preview
 ![QuietKill Demo](https://github.com/TempMeow/QuietKill/blob/4403642b2b9547da316cec5207dce64e1a27e8e8/media/1.gif)
+
 
 ## 🛠️ How to Use
 
 ### 1. Install the Module
-- Flash the module via **Magisk**, **KernelSU**, or **A-Patch**
+- Flash via **Magisk**, **KernelSU**, or **A-Patch**
 - Reboot your device
 
-### 2. Kill Apps (Two Methods – Use Either)
-
-#### 🔘 Method 1: Use the WebUI
-- Open the WebUI
-- Tap **"Force Stop Apps"**
-- View logs in the **terminal-style output**
-- Add apps to the ignore list to keep them running
-
-#### 🔊 Method 2: Use Volume-Up Trigger
-- Triple-press the **Volume Up** button (from anywhere)
-- The script runs silently in the background
-- Toggle listener on/off using the `/sdcard/stopQuietKill` file
+### 2. Kill Apps Automatically (Power Key = Kill)
+- Press the **power button to lock your screen**
+- QuietKill instantly runs & kills all background running apps
+- Add your apps to the **ignore list** to keep them alive
+- Add system apps to the **force kill list** to *ensure* they are killed every time
 
 
-
-## 🧾 Ignore List Format
+## 📃 Ignore List Format
 
 File location:
 ```
 $MODDIR/ignore.txt
 ```
 
-Example contents:
+Use this list to protect apps you **don’t want killed**.
+
+Example:
 ```
 com.whatsapp
 com.google.android.gms
@@ -60,29 +55,46 @@ com.google.android.gms
 Each line = one app package to **ignore from being killed**.
 
 
+## 🔥 Force Kill List Format (System Apps)
 
-## 🛑 Toggle Volume Trigger (Enable/Disable)
-```bash
-✅ Use the action button in your root manager
-
-# 🔕 Disable the volume trigger
-touch /sdcard/stopQuietKill
-
-# 🔔 Re-enable the volume trigger
-rm /sdcard/stopQuietKill
+File location:
 ```
+$MODDIR/ForceKill.txt
+```
+
+Use this list to **force-kill specific system apps** (e.g., bloatware or system services) on **every lockscreen trigger**.
+
+Example:
+```
+com.google.android.gms
+com.miui.analytics
+```
+
+Each line = one **system app** package to be killed even if normally ignored.
+
+> ⚠️ Use with caution killing essential system apps can lead to instability.
+
+
+## 🌐 WebUI Features
+
+- Start/stop kill actions manually
+- View kill logs in real time
+- Manage **ignore list** and **force kill list**
 
 ## ⚠️ Disclaimer
 
-Force-killing apps may break notifications or background services.  
-Always use the **ignore list** to exclude apps you rely on (like messaging or banking).
+Force-killing apps may break notifications, background sync, or alarms.  
+Use the **ignore list** for critical apps (e.g., messaging, banking, health apps).  
+Be careful with the **force kill list** killing system apps can cause unexpected behavior.
 
 
-## 📦 Download Popup Toast generator   `(optional)`
+## 📦 Optional: Download Toast Generator
+
 <p align="center">
   <a href="https://github.com/TempMeow/QuietKill/releases/download/v1/Toaster.apk">
     <img src="https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android" alt="Download APK"/>
   </a>
 </p>
 
-Made with love by [Mona](https://t.me/TempMeow)
+
+Made with ❤️ by [Mona](https://t.me/TempMeow)
