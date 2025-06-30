@@ -21,7 +21,7 @@ QuietKill is a powerful KernelSU/Magisk module that force-kills all non-essentia
 
 
 ## Preview
-![QuietKill Demo](https://github.com/TempMeow/QuietKill/blob/4403642b2b9547da316cec5207dce64e1a27e8e8/media/1.gif)
+![QuietKill Demo](https://github.com/TempMeow/QuietKill/blob/8eba88626da46d56e2c8668fde1e48424e98b0c3/media/1.gif)
 
 
 ## 🛠️ How to Use
